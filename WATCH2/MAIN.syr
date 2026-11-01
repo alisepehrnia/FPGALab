@@ -1,0 +1,489 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: MAIN.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MAIN.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MAIN"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : MAIN
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "G:/FPGA/WATCH2/MAIN.vhd" in Library work.
+Entity <main> compiled.
+Entity <main> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MAIN> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MAIN> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 64: Width mismatch. <sec> has a width of 6 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 66: Width mismatch. <min> has a width of 6 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 68: Width mismatch. <hour> has a width of 5 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 126: Width mismatch. <msec0> has a width of 4 bits but assigned expression is 10-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 140: Width mismatch. <temp0> has a width of 4 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 141: Width mismatch. <sec2> has a width of 4 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 154: Width mismatch. <temp1> has a width of 4 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 155: Width mismatch. <min2> has a width of 4 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "G:/FPGA/WATCH2/MAIN.vhd" line 165: Width mismatch. <hour2> has a width of 4 bits but assigned expression is 5-bit wide.
+Entity <MAIN> analyzed. Unit <MAIN> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MAIN>.
+    Related source file is "G:/FPGA/WATCH2/MAIN.vhd".
+WARNING:Xst:643 - "G:/FPGA/WATCH2/MAIN.vhd" line 154: The result of a 4x4-bit multiplication is partially used. Only the 4 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "G:/FPGA/WATCH2/MAIN.vhd" line 140: The result of a 4x4-bit multiplication is partially used. Only the 4 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "G:/FPGA/WATCH2/MAIN.vhd" line 66: The result of a 4x4-bit multiplication is partially used. Only the 6 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 5-bit register for signal <hour>.
+    Found 6-bit comparator greatequal for signal <hour$cmp_ge0000> created at line 82.
+    Found 5-bit comparator greatequal for signal <hour$cmp_ge0001> created at line 86.
+    Found 6-bit comparator less for signal <hour$cmp_lt0000> created at line 82.
+    Found 6-bit comparator less for signal <hour$cmp_lt0001> created at line 78.
+    Found 10-bit comparator less for signal <hour$cmp_lt0002> created at line 74.
+    Found 5-bit adder for signal <hour$share0000>.
+    Found 5-bit comparator greatequal for signal <hour1$cmp_ge0000> created at line 161.
+    Found 5-bit comparator greatequal for signal <hour1$cmp_ge0001> created at line 161.
+    Found 4-bit subtractor for signal <hour2>.
+    Found 6-bit register for signal <min>.
+    Found 6-bit adder for signal <min$addsub0000> created at line 80.
+    Found 4x4-bit multiplier for signal <min$mult0000> created at line 66.
+    Found 6-bit comparator greatequal for signal <min1$cmp_ge0000> created at line 147.
+    Found 6-bit comparator greatequal for signal <min1$cmp_ge0001> created at line 147.
+    Found 6-bit comparator greatequal for signal <min1$cmp_ge0002> created at line 147.
+    Found 6-bit comparator greatequal for signal <min1$cmp_ge0003> created at line 147.
+    Found 6-bit comparator greatequal for signal <min1$cmp_ge0004> created at line 147.
+    Found 4-bit subtractor for signal <min2>.
+    Found 10-bit up counter for signal <msec>.
+    Found 10-bit comparator greatequal for signal <msec$cmp_ge0000> created at line 74.
+    Found 4-bit subtractor for signal <msec0>.
+    Found 4x4-bit multiplier for signal <msec0$mult0000> created at line 126.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0000> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0001> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0002> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0003> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0004> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0005> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0006> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0007> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec1$cmp_ge0008> created at line 115.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0000> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0001> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0002> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0003> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0004> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0005> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0006> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0007> created at line 102.
+    Found 10-bit comparator greatequal for signal <msec2$cmp_ge0008> created at line 102.
+    Found 10-bit subtractor for signal <msect0>.
+    Found 6-bit register for signal <sec>.
+    Found 6-bit adder for signal <sec$add0000> created at line 64.
+    Found 6-bit adder for signal <sec$addsub0000> created at line 76.
+    Found 6-bit comparator greatequal for signal <sec$cmp_ge0000> created at line 78.
+    Found 6-bit comparator greatequal for signal <sec1$cmp_ge0000> created at line 133.
+    Found 6-bit comparator greatequal for signal <sec1$cmp_ge0001> created at line 133.
+    Found 6-bit comparator greatequal for signal <sec1$cmp_ge0002> created at line 133.
+    Found 6-bit comparator greatequal for signal <sec1$cmp_ge0003> created at line 133.
+    Found 6-bit comparator greatequal for signal <sec1$cmp_ge0004> created at line 133.
+    Found 4-bit subtractor for signal <sec2>.
+    Found 4x4-bit multiplier for signal <temp0$mult0000> created at line 140.
+    Found 4x4-bit multiplier for signal <temp1$mult0000> created at line 154.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred  37 Comparator(s).
+Unit <MAIN> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 4x4-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 9
+ 10-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 4
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 3
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 3
+ 5-bit register                                        : 1
+ 6-bit register                                        : 2
+# Comparators                                          : 37
+ 10-bit comparator greatequal                          : 19
+ 10-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 3
+ 6-bit comparator greatequal                           : 12
+ 6-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 4x4-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 9
+ 10-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 4
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 3
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+# Comparators                                          : 37
+ 10-bit comparator greatequal                          : 19
+ 10-bit comparator less                                : 1
+ 5-bit comparator greatequal                           : 3
+ 6-bit comparator greatequal                           : 12
+ 6-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MAIN> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MAIN, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MAIN.ngr
+Top Level Output File Name         : MAIN
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 48
+
+Cell Usage :
+# BELS                             : 215
+#      GND                         : 1
+#      INV                         : 6
+#      LUT2                        : 17
+#      LUT2_D                      : 1
+#      LUT3                        : 33
+#      LUT3_D                      : 1
+#      LUT4                        : 92
+#      LUT4_D                      : 11
+#      LUT4_L                      : 3
+#      MUXCY                       : 16
+#      MUXF5                       : 15
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 27
+#      FDC                         : 10
+#      FDCE_1                      : 17
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 47
+#      IBUF                        : 11
+#      OBUF                        : 36
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       88  out of   3584     2%  
+ Number of Slice Flip Flops:             27  out of   7168     0%  
+ Number of 4 input LUTs:                164  out of   7168     2%  
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    141    34%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 27    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.338ns (Maximum Frequency: 107.091MHz)
+   Minimum input arrival time before clock: 7.325ns
+   Maximum output required time after clock: 22.433ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 9.338ns (frequency: 107.091MHz)
+  Total number of paths / destination ports: 2141 / 44
+-------------------------------------------------------------------------
+Delay:               9.338ns (Levels of Logic = 6)
+  Source:            msec_2 (FF)
+  Destination:       hour_3 (FF)
+  Source Clock:      CLK falling
+  Destination Clock: CLK falling
+
+  Data Path: msec_2 to hour_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.626   1.091  msec_2 (msec_2)
+     LUT4_D:I1->O          2   0.479   0.804  msec_cmp_ge0000215_SW1 (N67)
+     LUT4:I2->O           22   0.479   1.383  msec_cmp_ge0000215 (msec_cmp_ge0000)
+     LUT4_D:I3->O          6   0.479   0.876  Madd_hour_share0000_xor<4>121 (N20)
+     LUT4_D:I3->O          1   0.479   0.740  Madd_hour_share0000_lut<2>1 (Madd_hour_share0000_lut<2>)
+     LUT4:I2->O            2   0.479   0.768  Madd_hour_share0000_xor<3>121 (N26)
+     LUT4:I3->O            1   0.479   0.000  hour_mux0001<0> (hour_mux0001<0>)
+     FDCE_1:D                  0.176          hour_4
+    ----------------------------------------
+    Total                      9.338ns (3.676ns logic, 5.662ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 173 / 34
+-------------------------------------------------------------------------
+Offset:              7.325ns (Levels of Logic = 7)
+  Source:            DIN1<0> (PAD)
+  Destination:       hour_3 (FF)
+  Destination Clock: CLK falling
+
+  Data Path: DIN1<0> to hour_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.715   1.290  DIN1_0_IBUF (DIN1_0_IBUF)
+     LUT4:I0->O            1   0.479   0.000  Madd_hour_share0000_xor<4>121_SW1_G (N74)
+     MUXF5:I1->O           1   0.314   0.740  Madd_hour_share0000_xor<4>121_SW1 (N61)
+     LUT4:I2->O            2   0.479   0.804  Madd_hour_share0000_lut<1>1 (Madd_hour_share0000_lut<1>)
+     LUT4_D:I2->LO         1   0.479   0.123  Madd_hour_share0000_xor<3>11 (N132)
+     LUT4:I3->O            2   0.479   0.768  Madd_hour_share0000_xor<3>121 (N26)
+     LUT4:I3->O            1   0.479   0.000  hour_mux0001<0> (hour_mux0001<0>)
+     FDCE_1:D                  0.176          hour_4
+    ----------------------------------------
+    Total                      7.325ns (3.600ns logic, 3.725ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 16527 / 32
+-------------------------------------------------------------------------
+Offset:              22.433ns (Levels of Logic = 17)
+  Source:            msec_4 (FF)
+  Destination:       X0<3> (PAD)
+  Source Clock:      CLK falling
+
+  Data Path: msec_4 to X0<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             16   0.626   1.346  msec_4 (msec_4)
+     LUT4:I0->O            1   0.479   0.000  msec2<0>200_SW01 (msec2<0>200_SW0)
+     MUXF5:I1->O           1   0.314   0.740  msec2<0>200_SW0_f5 (N77)
+     LUT3:I2->O            1   0.479   0.851  msec2<0>200 (msec2<0>200)
+     LUT3:I1->O            1   0.479   0.704  msec2<0>225 (msec2<0>225)
+     LUT4:I3->O            2   0.479   0.915  msec2<0>237 (X2_0_OBUF)
+     LUT2:I1->O            1   0.479   0.000  Msub_msect0_lut<2> (Msub_msect0_lut<2>)
+     MUXCY:S->O            1   0.435   0.000  Msub_msect0_cy<2> (Msub_msect0_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Msub_msect0_cy<3> (Msub_msect0_cy<3>)
+     XORCY:CI->O           8   0.786   1.216  Msub_msect0_xor<4> (msect0<4>)
+     LUT4:I0->O            1   0.479   0.000  msec1<0>122 (msec1<0>122)
+     MUXF5:I0->O           1   0.314   0.851  msec1<0>12_f5 (msec1<0>12)
+     LUT4:I1->O            2   0.479   1.040  msec1<0>50 (msec1<0>50)
+     LUT4:I0->O            1   0.479   0.000  msec1<0>144_F (N119)
+     MUXF5:I0->O           5   0.314   0.842  msec1<0>144 (X1_0_OBUF)
+     LUT4:I2->O            1   0.479   0.704  Msub_msec0_xor<3>12_SW0 (N87)
+     LUT4:I3->O            1   0.479   0.681  Msub_msec0_xor<3>12 (X0_3_OBUF)
+     OBUF:I->O                 4.909          X0_3_OBUF (X0<3>)
+    ----------------------------------------
+    Total                     22.433ns (12.544ns logic, 9.890ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.21 secs
+ 
+--> 
+
+Total memory usage is 4537960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

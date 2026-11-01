@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "G:/FPGA/Watch/MAIN.xst" -ofn "G:/FPGA/Watch/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "G:/FPGA/Watch/MAIN.xst" -ofn "G:/FPGA/Watch/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 MAIN.ngc MAIN.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -w -intstyle ise -ol high -t 1 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf 
+bitgen -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -ifn "G:/FPGA/Watch/MAIN.xst" -ofn "G:/FPGA/Watch/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 

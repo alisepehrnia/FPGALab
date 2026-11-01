@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "G:/FPGA/Counter/MAIN.xst" -ofn "G:/FPGA/Counter/MAIN.syr" 
+xst -intstyle ise -ifn "G:/FPGA/Counter/MAIN.xst" -ofn "G:/FPGA/Counter/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 
+xst -intstyle ise -ifn "G:/FPGA/Counter/MAIN.xst" -ofn "G:/FPGA/Counter/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 
+xst -intstyle ise -ifn "G:/FPGA/Counter/MAIN.xst" -ofn "G:/FPGA/Counter/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 
+xst -intstyle ise -ifn "G:/FPGA/Counter/MAIN.xst" -ofn "G:/FPGA/Counter/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 

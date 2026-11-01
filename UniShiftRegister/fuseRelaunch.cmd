@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "G:/FPGA/UniShiftRegister/TEST_isim_beh.exe" -prj "G:/FPGA/UniShiftRegister/TEST_beh.prj" "work.TEST" 

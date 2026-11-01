@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">64</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">sec</arg>&gt; has a width of <arg fmt="%d" index="4">6</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">min</arg>&gt; has a width of <arg fmt="%d" index="4">6</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">68</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">hour</arg>&gt; has a width of <arg fmt="%d" index="4">5</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">126</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">msec0</arg>&gt; has a width of <arg fmt="%d" index="4">4</arg> bits but assigned expression is <arg fmt="%d" index="5">10</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">140</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">temp0</arg>&gt; has a width of <arg fmt="%d" index="4">4</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">141</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">sec2</arg>&gt; has a width of <arg fmt="%d" index="4">4</arg> bits but assigned expression is <arg fmt="%d" index="5">6</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">154</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">temp1</arg>&gt; has a width of <arg fmt="%d" index="4">4</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">155</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">min2</arg>&gt; has a width of <arg fmt="%d" index="4">4</arg> bits but assigned expression is <arg fmt="%d" index="5">6</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">165</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">hour2</arg>&gt; has a width of <arg fmt="%d" index="4">4</arg> bits but assigned expression is <arg fmt="%d" index="5">5</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">154</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">4</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">4</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">140</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">4</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">4</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">G:/FPGA/WATCH2/MAIN.vhd</arg>&quot; line <arg fmt="%d" index="2">66</arg>: The result of a <arg fmt="%d" index="3">4</arg>x<arg fmt="%d" index="4">4</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">6</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+</messages>
+

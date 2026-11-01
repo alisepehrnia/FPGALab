@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "G:/FPGA/WATCH2/MAIN.xst" -ofn "G:/FPGA/WATCH2/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 
+xst -intstyle ise -ifn "G:/FPGA/WATCH2/MAIN.xst" -ofn "G:/FPGA/WATCH2/MAIN.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim MAIN.ngc MAIN_synthesis.v 

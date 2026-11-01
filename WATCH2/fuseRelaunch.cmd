@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "G:/FPGA/WATCH2/TEST_isim_beh.exe" -prj "G:/FPGA/WATCH2/TEST_beh.prj" "work.TEST" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "G:/FPGA/FPGA_EXAM_Q2/MAIN_isim_beh.exe" -prj "G:/FPGA/FPGA_EXAM_Q2/MAIN_beh.prj" "work.MAIN" 

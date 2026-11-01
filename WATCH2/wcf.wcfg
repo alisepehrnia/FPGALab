@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="G:/FPGA/WATCH2/TEST_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#c0c0c0</obj_property>
+   </wvobject>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">Settings</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/din1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">din1[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/din0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">din0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">din0[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/test/h1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">h1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/h2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">h2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m1[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m2[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/s1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s1[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/s2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s2[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/x2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/x1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/x0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">x0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider17" type="divider">
+      <obj_property name="label"></obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#000000</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="group54" type="group">
+      <obj_property name="label">Local Values</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test/uut/hour" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">hour[4:0]</obj_property>
+         <obj_property name="ObjectShortName">hour[4:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/sec" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sec[5:0]</obj_property>
+         <obj_property name="ObjectShortName">sec[5:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/min" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">min[5:0]</obj_property>
+         <obj_property name="ObjectShortName">min[5:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/hour" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">hour[4:0]</obj_property>
+         <obj_property name="ObjectShortName">hour[4:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/msect0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">msect0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">msect0[9:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/msec" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">msec[9:0]</obj_property>
+         <obj_property name="ObjectShortName">msec[9:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/msec0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">msec0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">msec0[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/msec1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">msec1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">msec1[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/msec2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">msec2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">msec2[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/sec1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sec1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sec1[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/sec2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sec2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sec2[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/min1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">min1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">min1[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/min2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">min2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">min2[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/hour2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">hour2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">hour2[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/hour1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">hour1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">hour1[1:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/temp0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">temp0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">temp0[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/uut/temp1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">temp1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">temp1[3:0]</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#a0a0a4</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
